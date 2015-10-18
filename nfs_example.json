@@ -1,0 +1,144 @@
+data = [
+    {
+        "packet": [
+            {
+                "destination port": "2049",
+                "source ip": "10.0.50.1",
+                "source port": "930",
+                "other": "NFS request xid 2061947998 192 getattr fh 0,2/53",
+                "length": 1575592,
+                "destination ip": "10.0.50.1",
+                "time": "18:57:54"
+            },
+            {
+                "destination port": "2049",
+                "source ip": "10.0.50.1",
+                "source port": "930",
+                "other": "NFS request xid 2263274590 200 getattr fh 0,2/53",
+                "length": 1575396,
+                "destination ip": "10.0.50.1",
+                "time": "18:57:56"
+            },
+            {
+                "destination port": "2049",
+                "source ip": "10.0.50.1",
+                "source port": "930",
+                "other": "NFS request xid 2447823966 200 getattr fh 0,2/53",
+                "length": 1575396,
+                "destination ip": "10.0.50.1",
+                "time": "18:57:57"
+            },
+            {
+                "destination port": "2049",
+                "source ip": "10.0.50.1",
+                "source port": "930",
+                "other": "NFS request xid 2632373342 184 getattr fh 0,2/53",
+                "length": 800,
+                "destination ip": "10.0.50.1",
+                "time": "18:58:01"
+            },
+            {
+                "destination port": "2049",
+                "source ip": "10.0.50.1",
+                "source port": "930",
+                "other": "NFS request xid 2699482206 180 getattr fh 0,2/53",
+                "length": 184,
+                "destination ip": "10.0.50.1",
+                "time": "18:58:03"
+            },
+            {
+                "destination port": "2049",
+                "source ip": "10.0.50.1",
+                "source port": "930",
+                "other": "NFS request xid 2716259422 184 getattr fh 0,2/53",
+                "length": 956,
+                "destination ip": "10.0.50.1",
+                "time": "18:58:05"
+            },
+            {
+                "destination port": "2049",
+                "source ip": "10.0.50.1",
+                "source port": "930",
+                "other": "NFS request xid 2800145502 184 getattr fh 0,2/53",
+                "length": 800,
+                "destination ip": "10.0.50.1",
+                "time": "18:58:07"
+            }
+        ],
+        "destination_ip": "10.0.50.2",
+        "destination_port": "2049",
+        "source_ip": "10.0.50.1",
+        "source_port": "930"
+    },
+    {
+        "packet": [
+            {
+                "destination port": "930",
+                "source ip": "10.0.50.2",
+                "source port": "2049",
+                "other": "NFS reply xid 2061947998 reply ok 168 getattr NON 4 ids 0/386863190 sz 0",
+                "length": 2264,
+                "destination ip": "10.0.50.2",
+                "time": "18:57:54"
+            },
+            {
+                "destination port": "930",
+                "source ip": "10.0.50.2",
+                "source port": "2049",
+                "other": "NFS reply xid 2263274590 reply ok 96 getattr ERROR: No such file or directory",
+                "length": 2092,
+                "destination ip": "10.0.50.2",
+                "time": "18:57:56"
+            },
+            {
+                "destination port": "930",
+                "source ip": "10.0.50.2",
+                "source port": "2049",
+                "other": "NFS reply xid 2447823966 reply ok 96 getattr ERROR: No such file or directory",
+                "length": 2092,
+                "destination ip": "10.0.50.2",
+                "time": "18:57:57"
+            },
+            {
+                "destination port": "930",
+                "source ip": "10.0.50.2",
+                "source port": "2049",
+                "other": "NFS reply xid 2632373342 reply ok 240 getattr NON 3 ids 0/386863190 sz 0",
+                "length": 1968,
+                "destination ip": "10.0.50.2",
+                "time": "18:58:01"
+            },
+            {
+                "destination port": "930",
+                "source ip": "10.0.50.2",
+                "source port": "2049",
+                "other": "NFS reply xid 2699482206 reply ok 116 getattr NON 3 ids 0/386863190 sz 0",
+                "length": 120,
+                "destination ip": "10.0.50.2",
+                "time": "18:58:03"
+            },
+            {
+                "destination port": "930",
+                "source ip": "10.0.50.2",
+                "source port": "2049",
+                "other": "NFS reply xid 2716259422 reply ok 240 getattr NON 3 ids 0/386863190 sz 0",
+                "length": 1260,
+                "destination ip": "10.0.50.2",
+                "time": "18:58:05"
+            },
+            {
+                "destination port": "930",
+                "source ip": "10.0.50.2",
+                "source port": "2049",
+                "other": "NFS reply xid 2800145502 reply ok 240 getattr NON 3 ids 0/386863190 sz 0",
+                "length": 720,
+                "destination ip": "10.0.50.2",
+                "time": "18:58:07"
+            }
+        ],
+        "destination_ip": "10.0.50.1",
+        "destination_port": "930",
+        "source_ip": "10.0.50.2",
+        "source_port": "2049"
+    }
+]

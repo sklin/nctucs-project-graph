@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Project</title>
+    <!-- Load c3.css -->
+    <!--link href="c3js/c3.css" rel="stylesheet" type="text/css"-->
+
+    <!-- Load d3.js and c3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <!--script src="c3js/c3.min.js"></script-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.css" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.js" charset="utf-8"></script>
+
+  </head>
+  <body>
+    <div id="chart"></div>
+    <!-- script type="text/javascript" src="traffic_pattern.json"></script-->
+    <script type="text/javascript" src="nfs_example.json"></script>
+    <script type="text/javascript" src="transform.js"></script>
+    <script>
+    var mydata = [];
+    var x_axes = ['x'];
+    for(var time = 0; time<data[0].packet.length; time++){
+      x_axes.push(data[0].packet[time].time);
+    }
+    mydata.push(x_axes);
+
+    for(var i=0; i<data.length; i++) {
+      mydata.push(transform(data[i]));
+    }
+
+    var chart = c3.generate({
+        data: {
+            x: 'x',
+            xFormat: '%H:%M:%S',
+            columns: mydata,
+        },
+        axis: {
+            x: {
+                label: 'Time',
+                type: 'timeseries',
+                tick: {
+                    format: '%H:%M:%S',
+                }
+            },
+            y: {
+                label: 'log(length)',
+                //min: 10000,
+                padding: {
+                  //top: 100,
+                  //bottom: 100
+                },
+            },
+        }
+    });
+    //chart.axis.range({
+    //    min: { y: 0},
+    //    max: { y: 10},
+    //});
+    </script>
+  </body>
+</html>
